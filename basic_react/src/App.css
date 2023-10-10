@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+#pp{
+  text-align: center;
+  color:rgb(252, 93, 93);
+  background-color: rgb(113, 246, 155);
+}
