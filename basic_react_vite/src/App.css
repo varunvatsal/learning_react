@@ -40,3 +40,10 @@
 .read-the-docs {
   color: #888;
 }
+#increment {
+  margin: 5px;
+}
+#decrement {
+  margin: 5px;
+}
+
