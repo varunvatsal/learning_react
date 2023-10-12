@@ -4,15 +4,26 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-  let counter = 5;
+  let [counter, setCounter] = useState(0)
+  
 
   const addValue = ()=>{
-    console.log("value added", Math.floor(Math.random()*10) )
-    counter = counter + 1; 
+    if(counter<20){
+    console.log(`previous counter value: ${counter}, new counter value: ${counter+1}` )
+    setCounter(counter + 1)
+    }
+    else{
+      console.log("counter greater than 20 not allowed")
+    }
   }
   const subValue = ()=>{
-    console.log("value subtracted", Math.floor(Math.random()*100))
+    if(counter>0){
+      console.log(`previous counter value: ${counter}, new counter value: ${counter-1}`)
+      setCounter(counter - 1)
+    }
+    else{
+      console.log("counter less than zero not allowed")
+    }
   }
 
   return (
