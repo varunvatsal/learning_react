@@ -9,11 +9,15 @@ function App() {
 
   return (
     <>
-      <div>
+      <div id="colorBox">
         <ColorButton obj='red'/>
         <ColorButton obj='yellow'/>
         <ColorButton obj='green'/>
         <ColorButton obj='blue'/>
+        <ColorButton obj='violet' />
+        <ColorButton obj='purple' />
+        <ColorButton obj='pink' />
+        <ColorButton obj='brown' />
       </div>
     </>
   )
