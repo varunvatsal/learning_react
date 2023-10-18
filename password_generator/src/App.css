@@ -49,12 +49,13 @@
   width: 80vh;
 }
 .body_0{
-  height: 30vh;
+  height: 20vh;
   width: 70vh;
   border-radius: 10px;
   background-color: white;
 }
 .passwordInput{
   width: 50vh;
-  height: 5vh
+  height: 5vh;
+  border-radius: 10px
 }
