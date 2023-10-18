@@ -18,6 +18,7 @@ function App() {
         <ColorButton obj='purple' />
         <ColorButton obj='pink' />
         <ColorButton obj='brown' />
+        <ColorButton obj='black' />
       </div>
     </>
   )
