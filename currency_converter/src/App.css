@@ -21,7 +21,7 @@ body{
   margin: 6px;
   height: 20vh;
   width: 80vh;
-  background-color: rgb(85, 151, 250);
+  background-color: rgba(85, 151, 250, 0.9);
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -30,7 +30,7 @@ body{
   margin: 6px;
   height: 20vh;
   width: 80vh;
-  background-color: rgb(85, 151, 250);
+  background-color: rgba(85, 151, 250, 0.9);
   border-radius: 10px;
   display: flex;
   align-items: center;

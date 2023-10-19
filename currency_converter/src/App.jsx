@@ -5,6 +5,7 @@ import './App.css'
 
 function App() {
   const [data, setData] = useState({})
+  const [amount, setamount] = useState(0)
   let currency = 'usd'
   let url = `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${currency}.json`
   useEffect(()=>{
