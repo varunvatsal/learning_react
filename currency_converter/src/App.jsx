@@ -4,15 +4,14 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [data, setData] = useState({})
+  const [currency, setCurrency] = useState('usd')
   const [amount, setamount] = useState(0)
-  let currency = 'usd'
-  let url = `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${currency}.json`
+  const [convertedAmount, setConvertedAmount] = useState(0)
+  const [data, setData] = useState({})
   useEffect(()=>{
-    fetch(url)
+    fetch(`https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${currency}.json`)
     .then(res=>res.json())
     .then((res)=>{setData(res[currency])})
-    console.log(data)
   }
   ,[currency])
 
@@ -20,22 +19,22 @@ function App() {
     <>
       <div className='container'>
         <div className='from'>
-          <input onChange={(e)=>{currency=e.target.value}} placeholder='from' className='from_input' />
-          <select name="cars" id="cars_from">
-          <option value="volvo">Volvo</option>
-          <option value="saab">Saab</option>
-          <option value="mercedes">Mercedes</option>
-          <option value="audi">Audi</option>
+          <input onChange={(e)=>{setamount(e.target.value)}} placeholder='from' className='from_input' />
+          <select name="currrency" id="currency_from" onChange={(e)=>{setCurrency(e.target.value)}}>
+          <option value="usd">usd</option>
+          <option value="inr">inr</option>
+          <option value="eur">eur</option>
+          <option value="xmr">xmr</option>
           </select>
 
         </div>
         <div className='to'>
-          <input placeholder='to' className='to_input' readOnly/>
-          <select name="cars" id="cars_to">
-          <option value="volvo">Volvo</option>
-          <option value="saab">Saab</option>
-          <option value="mercedes">Mercedes</option>
-          <option value="audi">Audi</option>
+          <input placeholder='to' className='to_input' value={convertedAmount} readOnly/>
+          <select name="currency" id="currency_to" onChange={(e)=>{setConvertedAmount(amount*(data.e.target.value))}}>
+          <option value="usd">usd</option>
+          <option value="inr">inr</option>
+          <option value="eur">eur</option>
+          <option value="xmr">xmr</option>
           </select>
         </div>
       </div>
