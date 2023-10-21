@@ -1,4 +1,5 @@
 //images taken from pexels
+// npm create vite@latest
 
 project 1 -> learning how to use props 
 
