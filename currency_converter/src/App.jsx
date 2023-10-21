@@ -38,8 +38,8 @@ function App() {
         <div className='to'>
           <input placeholder='to' className='to_input' value={convertedAmount} readOnly/>
           <select name="currency" id="currency_to" onChange={(e)=>{setCurrencyTo(e.target.value)}}>
-          <option value="usd">usd</option>
           <option value="inr">inr</option>
+          <option value="usd">usd</option>
           <option value="eur">eur</option>
           <option value="xmr">xmr</option>
           </select>

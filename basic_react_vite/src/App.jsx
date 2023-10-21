@@ -32,7 +32,7 @@ function App() {
 
   return (
     <>
-          <h1>hello varun, vite</h1>
+          <h1>counter using useState</h1>
           <h2>counter value: {counter}</h2>
           <button id='increment' onClick={addValue}>increment</button>
           <button id='decrement' onClick={subValue}>decrement</button>
