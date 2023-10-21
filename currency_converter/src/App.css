@@ -11,12 +11,14 @@ body{
   text-align: center;
 }
 .container {
+  background: url(https://images.pexels.com/photos/534216/pexels-photo-534216.jpeg?auto=compress&cs=tinysrgb&w=600);
   height: 25vh;
-  width: 130vh;
-  background-color: rgba(254, 246, 217, 0.688);
+  width: 135vh;
+  background-color: rgba(254, 246, 217, 0.5);
   border-radius: 10px;
   display: flex;
   align-items: center;
+  padding: 1vh;
 }
 .from{
   margin: 6px;

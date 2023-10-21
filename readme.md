@@ -1,3 +1,5 @@
+//images taken from pexels
+
 project 1 -> learning how to use props 
 
 basic react vite -> learning how to use useState hook to make a counter
