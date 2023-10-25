@@ -1,3 +1,6 @@
+hello, my name is varun vatsal, i am learning react and it's application and this repositories contains 
+all the projects i made while doing that.
+
 //images taken from pexels
 // npm create vite@latest
 
