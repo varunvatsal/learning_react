@@ -14,6 +14,5 @@ currency_converter -> making real time currency converter, using api, useState, 
 
 learning_react_router -> making a multiple linked webpages using react router, navlink, link, paths etc, Rendering a nested UI from the route matches
 
-learning_context-> learning how to use context api by making theme switcher.
+learning_context-> making to-do app using local stroage, and context api.
 
-to_do-> making to-do app using local stroage, and context api.
