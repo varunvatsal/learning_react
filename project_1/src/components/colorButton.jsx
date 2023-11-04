@@ -2,14 +2,14 @@ import React from "react";
 import './colorButton.css'
 
 
-function ColorButton(props){
-    console.log(props)
+function ColorButton({obj}){
+    console.log(obj)
     const handleChange = ()=>{
-        console.log(props.obj)
-        document.body.style.backgroundColor = props.obj
+        console.log(obj)
+        document.body.style.backgroundColor = obj
     }
     return (
-        <button onClick={handleChange} style={{'margin': '5px', 'background-color': props.obj}} className="colorButton">{props.obj}</button>
+        <button onClick={handleChange} style={{'margin': '5px', 'background-color': obj}} className="colorButton">{obj}</button>
     )
 }
 
