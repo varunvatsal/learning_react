@@ -3,6 +3,7 @@ all the projects i made while doing that.
 
 //images taken from pexels
 // npm create vite@latest
+//npm run dev ---> to run each project
 
 project 1 -> learning how to use props 
 
