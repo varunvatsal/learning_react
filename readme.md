@@ -17,3 +17,5 @@ learning_react_router -> making a multiple linked webpages using react router, n
 
 learning_context-> making to-do app using local stroage, and context api.
 
+learning_redux_toolkit -> trying to make a todo app using redux toolkit state management
+
